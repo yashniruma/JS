@@ -1,0 +1,22 @@
+<script>
+/* To declare js Global variable inside function , you need to use 
+window object */
+
+window.value= 90 ;
+
+function niru(){
+    document.write("global variable before change");
+    alert(90 );
+}
+
+function after_change(){
+    window.value=200 ;
+    document.write(window.value , "After change ");
+}
+
+niru();
+after_change();
+
+document.write( window.value);
+
+</script>
